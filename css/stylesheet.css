@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Concert One', cursive;
+}
+
+
+h1{
+	font-size: 40px;
+}
+
+main{
+	position: relative;
+	width: 460vw;
+  	height: 100vh;
+  	z-index: 1;
+  	overflow-x: auto;
+  	overflow-y: hidden;
+}
+.background1{
+	background-color: #3E2728;
+	width: 160vw;
+	top: 0;	
+	bottom: 0;
+	position: absolute;
+	height: 100vh;
+	z-index: 2;
+}
+
+.background2{
+	background-color: rgb(186,197,151);
+	width: 180vw;
+	top: 0;
+	left: 160vw;
+	bottom: 0;
+	position: absolute;
+	height: 100vh;
+	z-index: 2;
+
+}
+
+.background3{
+	background-color: #140F66;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 3;
+	left: 340vw;
+	width: 120vw;
+	height: 100vh;
+}
+
+
+.nubes{
+	background-image: url("../img/nubes.svg");
+	background-attachment: fixed;
+  	background-size: auto 100%;
+  	width: 460vw;
+  	height: 100vh;
+  	margin: auto;
+  	animation: multi-background linear 100s infinite;
+  	position: absolute;
+    z-index: 4;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.2);
+}
+
+@keyframes multi-background{
+	from {
+		background-position: 0px 0px;  
+	}
+	to{
+	background-position: 3000px 0px;  
+	} 
+
+}
+
+.fantasma{
+  	width: 150px;
+  	height: 150px;
+  	position: absolute;
+  	display: block;
+  	z-index: 8;
+  	bottom: 1vh;
+}
+
+#fantasmica{
+	width: 150px;
+	position: fixed;
+	margin-top: 20px;
+}
+
+.personal{
+	height: 100vh;
+	width: 70vw;
+	position: absolute;
+	left: 10vw;
+	z-index: 5;
+	bottom: 0;
+	background-image: url(../img/casita.svg);
+	background-repeat: no-repeat;
+}
+
+.presentacion{
+	position: absolute;
+	line-height: 1.7;
+	text-align: center;
+	left: 27vw;
+	top: 35vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #C97D82;
+}
+
+
+.estudios{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 3;
+	left: 110vw;
+	z-index: 6;
+	top: 0;
+	background-image: url(../img/birrete.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.foto{
+	width: 150px;
+}
+
+.estudios-parallax{
+	position: absolute;
+	text-align: center;
+/*	display: block;*/
+	color: rgb(233, 215,156);
+	margin-left: 450px;
+	margin-top: 200px;
+}
+
+.estudios-parallax p{
+	margin-bottom: 15px;
+	line-height: 1.6;
+}
+
+
+#informatica, #comunicacion{
+	width: 500px;
+}
+
+.arbol{
+	left: 230vh;
+	position: absolute;
+	z-index: 7;
+}
+
+.caja-arbol{
+	display: flex;
+	justify-content: center;
+	width: 800px;
+}
+
+
+.skills-topics{
+	color: #6D4E49;
+	font-size: 22px;
+	width: 750px;
+	height: 100vh;
+	position: absolute;
+	z-index: 8;
+	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	text-align: center;
+	transition: .2s opacity ease-out;
+	top: 20vh;
+	margin: 0px 30px 0px 30px;
+	left: -10px;
+}
+
+.skills-topics:hover{
+	opacity: 1;
+	transition: .2s opacity ease-in;
+}
+
+
+.skills-topics p {
+	background-color: white;
+	width: 120px;
+	height: 120px;
+	margin:0px 20px 0px 20px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	box-shadow: 10px 10px 10px 10px rgba(0,0,0,.2);
+}
+
+
+.contactar{
+	left: 340vw;
+	position: absolute;
+	z-index: 7;
+	height: 100vh;
+	width: 120vw;
+}
+
+.contacto{
+	display: flex;
+	justify-content: center;
+}
+
+.formulario{
+	width: 500px;
+	height: 350px;
+	margin-top: 200px;
+	color: #FFEDBC;
+	background-color: #A76FCC;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.formulario input, .formulario textarea{
+	border: 0;
+	padding: 5px;
+}
+.formulario input{
+	height: 20px;
+}
+
+#boton-form{
+	padding: 10px 20px;
+	background-color: #FFEDBC;
+	color: #5F0799;
+	border: 0;
+}
+
+#boton-form:hover{
+	color: #FFEDBC;
+	background-color:#5F0799;
+}
+
+.formulario h1{
+	font-size: 25px;
+}
