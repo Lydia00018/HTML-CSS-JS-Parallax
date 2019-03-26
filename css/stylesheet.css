@@ -83,15 +83,16 @@ main{
   	width: 150px;
   	height: 150px;
   	position: absolute;
-  	display: block;
   	z-index: 8;
-  	bottom: 1vh;
+  	bottom: 0;
 }
 
-#fantasmica{
-	width: 150px;
+#ghost{
 	position: fixed;
-	margin-top: 20px;
+	width: 150px;
+	bottom: 1px;
+	transition: transform 1s linear;
+    transform: translateY(0px);
 }
 
 .personal{
